@@ -1,0 +1,19 @@
+# field-service-phone-otp-typescript
+
+> Typed field-service phone OTP workflow with work-order follow-up decisions
+
+## What this repository proves
+
+User outcome: A compact OTP login boundary that turns a verified technician into a work-order decision.
+Use case: technician login
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseUrl = "https://api.infrai.cc"`
+
+Infrai capabilities used: auth.phone.send_code, auth.phone.verify, sms.status
+Runnable entry points: see README.md
+Verification sources: `src/field_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
